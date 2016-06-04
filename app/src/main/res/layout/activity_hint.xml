@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutHint"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundlevel1"
+    tools:context="com.example.kelly.logeasysummerresearch.HintActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutHintTop"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ff192030"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="145dp"
+            android:layout_height="20dp"
+            android:id="@+id/imvPoints1"
+            android:src="@drawable/points" />
+
+        <TextView
+            android:id="@+id/txtPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/Branco"
+            android:text="123" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutHintMiddle"
+        android:layout_width="310dp"
+        android:layout_height="235dp"
+        android:layout_above="@+id/layoutHintBottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="false"
+        android:layout_marginLeft="40dp"
+        android:layout_weight="0.71"
+        android:background="@drawable/rectangle_shape"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:id="@+id/scrollViewHint"
+            android:layout_width="290dp"
+            android:layout_height="190dp"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_margin="10dp"
+            android:fillViewport="false">
+
+            <ImageView
+                android:id="@+id/ivwHInt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutHintBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="116dp"
+            android:layout_height="34dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/buttomhin1"
+            android:gravity="bottom|right"
+            android:onClick="OnClick"
+            android:singleLine="false" />
+
+        <ImageView
+            android:id="@+id/imgAvatarHint"
+            android:layout_width="140dp"
+            android:layout_height="180dp"
+            android:layout_gravity="left|bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/avatar22" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
